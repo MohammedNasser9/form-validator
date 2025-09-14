@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+input:focus{
+    outline: none;
+    border:none
+}
+body{
+    background: #f9f9f9;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 6%;
+}
+.container{
+    background-color: #fff;
+    width:min(100%,400px);
+    padding:20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3),
+                0 -5px -10px rgba(0,0,0,.3),
+                0 -5px 10px rgba(0,0,0,.3),
+                0 5px -10px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+
+.container form h1{
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+    color:  #333;;
+}
+.container form .box{
+    margin-bottom: 10px;
+}
+.container form .box label{
+    display: block;
+    /* font-size: 14px; */
+    margin-bottom: 5px;
+    color:#555;
+    font-weight: bold;
+}
+.container form .box input{
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 6px;
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    font-size: 14px;
+    transition: .1s;
+}
+.container form .box input:focus{
+    border: 2px solid #3498db;
+}
+.container form .box.error input{
+    border-color:#e74c3c;;
+}
+.container form .box.success input{
+    border-color: #2ecc71;
+}
+.container form .box small{
+    color: #e74c3c;
+    font-size: 10.5px ;
+    margin-left: 6px;
+    visibility: hidden;
+}
+.container form .box.error small{
+    visibility: visible;
+}
+.container form button#submit-btn{
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+    background: #3498db;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none    
+}
+.container form button#submit-btn:hover{
+    background: #2980b9
+}
+
+
+
